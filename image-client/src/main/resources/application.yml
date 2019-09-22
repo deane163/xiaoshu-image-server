@@ -1,0 +1,26 @@
+# server
+server:
+  port: 8020
+  servlet:
+    context-path: /image-client
+
+##upload file limit Max  size
+multipart:
+  maxFileSize: 100Mb
+
+### upload file configure
+### attention: different server has different ID
+application:
+  message:
+    images:
+      direction: D:/springboot/image11/
+      root: D:/springboot/
+      id:
+        direction: /images11/
+
+### Zookeeper configuration Center
+zookeeper:
+  configuration:
+    center: 127.0.0.1:2181
+  registry:
+    value: http://127.0.0.1:8040/image-client

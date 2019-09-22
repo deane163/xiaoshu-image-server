@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /image-master
+#spring
+spring:
+  devtools:
+    restart:
+      enabled: true     #这里是为了热部署的，与mybatis是无关的
+##Swagger config
+swagger:
+  contact-name=Deane
+  contact-url=
+  contact-email=deane.jia@ubtrobot.com
+
+### Zookeeper configuration Center
+zookeeper:
+  configuration:
+    center: 127.0.0.1:2181
